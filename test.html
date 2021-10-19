@@ -1,0 +1,623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0034)https://thangld2010.herokuapp.com/ -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Trimatrix Lab">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="https://tipsmake.com/data/images/beautiful-unique-2010-images-for-women-picture-3-N6zXQeOIo.jpg">
+    <title>ThangLD</title>
+    <link rel="icon" href="./test_files/heart.png">
+    <style type="text/css" media="screen">
+        @import url('https://fonts.googleapis.com/css?family=Corben:700');
+
+        h1 {
+            font-family: 'Corben', cursive;
+            font-size: 6rem;
+            color: white;
+            letter-spacing: 0.1rem;
+            text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.66);
+        }
+
+        .hero {
+            background-size: cover;
+            height: max-content;
+            min-height: 30rem;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .snow {
+            position: absolute;
+            min-width: 100vw;
+            min-height: 100vh;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .snow .svg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #snow-top-layer {
+            will-change: transform;
+            transform: translateY(-768px);
+            animation: fall 22.5s infinite linear;
+        }
+
+        #snow-bottom-layer {
+            will-change: transform;
+            transform: translateY(-768px);
+            animation: fall 45s infinite linear;
+        }
+
+        @keyframes fall {
+
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+
+        body {
+            background-color: transparent;
+            color: black;
+            font-family: 'Lucida Grande', Verdana, Arial;
+            /* background-image: radial-gradient(100% 176%, #253854 80%, #061922 100%); */
+            background-size: cover;
+            /* display: flex; */
+        }
+
+        #container {
+            width: 100%;
+            height: 700px;
+            margin-bottom: 150px;
+            -webkit-perspective: 800;
+            /* For compatibility with iPhone 3.0, we leave off the units here */
+            -webkit-perspective-origin: 50% 225px;
+            /* display: inline-flex; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #stage {
+            width: 100%;
+            height: 100%;
+            -webkit-transition: -webkit-transform 2s;
+            -webkit-transform-style: preserve-3d;
+        }
+
+        #shape {
+            position: relative;
+            top: 160px;
+            margin: 0 auto;
+            height: 300px;
+            width: 300px;
+            -webkit-transform-style: preserve-3d;
+        }
+
+        .plane {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            border: 1px solid white;
+            -webkit-border-radius: 12px;
+            -webkit-box-sizing: border-box;
+            text-align: center;
+            font-family: Times, serif;
+            font-size: 124pt;
+            color: darkgrey;
+            /* background-color: rgba(255, 255, 255, 0.6); */
+            background-size: cover;
+            -webkit-transition: -webkit-transform 2s, opacity 2s;
+            -webkit-backface-visibility: hidden;
+        }
+
+        #shape.backfaces .plane {
+            -webkit-backface-visibility: visible;
+        }
+
+        #shape {
+            -webkit-animation: spin 8s infinite linear;
+        }
+
+        @-webkit-keyframes spin {
+            from {
+                -webkit-transform: rotateY(0);
+            }
+
+            to {
+                -webkit-transform: rotateY(-360deg);
+            }
+        }
+
+        /* ---------- cube styles ------------- */
+        .cube>.one {
+            opacity: 0.5;
+            -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(90deg) translateZ(150px);
+            background-image: url("");
+        }
+
+        .cube>.two {
+            opacity: 0.5;
+            -webkit-transform: scale3d(1.2, 1.2, 1.2) translateZ(150px);
+            /* background-image: url("https://scontent.fsin5-1.fna.fbcdn.net/v/t1.6435-9/234632247_4147209105397931_5891906474873115551_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=pjzwrzEnC0wAX_2E4QP&tn=JdMf48le4uS1IjPR&_nc_ht=scontent.fsin5-1.fna&oh=6e2d3464ac95dbed662da23cfd885f66&oe=61926162"); */
+        }
+
+        .cube>.three {
+            opacity: 0.5;
+            -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(90deg) translateZ(150px);
+            /* background-image: url("https://scontent.fsin5-1.fna.fbcdn.net/v/t1.15752-9/246028464_357813475865480_6272024003715794849_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_ohc=6ow7MtsD4CIAX8AOpi8&_nc_ht=scontent.fsin5-1.fna&oh=d59eac5526e9d1d3636e56c86479f845&oe=6190722C"); */
+        }
+
+        .cube>.four {
+            opacity: 0.5;
+            -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(180deg) translateZ(150px);
+            /* background-image: url("https://scontent.fsin5-1.fna.fbcdn.net/v/t1.15752-9/245908750_1293757641045323_2770058712396074022_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_ohc=AYF_viGRyVUAX8QS2fd&_nc_ht=scontent.fsin5-1.fna&oh=e4ec04bffd370fa4d3fe58d9a7f9baa0&oe=6190C869"); */
+        }
+
+        .cube>.five {
+            opacity: 0.5;
+            -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(-90deg) translateZ(150px);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-image: url("https://scontent.fsin5-1.fna.fbcdn.net/v/t1.6435-9/147086455_3627847440667436_2255550803682889954_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=RfNjmG090JQAX_Pdc5d&_nc_oc=AQkMQbSZAB9tPIXA4QcBGZKgtUdvtAUmH2TzzgxbIbfNrxxH87x4fp0pfFNdfvIU2d8&tn=JdMf48le4uS1IjPR&_nc_ht=scontent.fsin5-1.fna&oh=c670f140523565af1ac809c95994dd44&oe=61914613"); */
+        }
+
+        .cube>.six {
+            opacity: 0.5;
+            -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(-90deg) translateZ(150px) rotate(180deg);
+            background-image: url("");
+        }
+
+
+        .cube>.seven {
+            -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateX(90deg) translateZ(150px) rotate(180deg);
+            background-image: url("");
+        }
+
+        .cube>.eight {
+            -webkit-transform: scale3d(0.8, 0.8, 0.8) translateZ(150px);
+            background-image: url("");
+        }
+
+        .cube>.nine {
+            -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(90deg) translateZ(150px);
+            background-image: url("");
+        }
+
+        .cube>.ten {
+            -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(180deg) translateZ(150px);
+            background-image: url("");
+        }
+
+        .cube>.eleven {
+            -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(-90deg) translateZ(150px);
+            background-image: url("");
+        }
+
+        .cube>.twelve {
+            -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateX(-90deg) translateZ(150px);
+            background-image: url("");
+        }
+
+        /* ---------- ring styles ------------- */
+        .ring>.one {
+            -webkit-transform: translateZ(380px);
+        }
+
+        .ring>.two {
+            -webkit-transform: rotateY(30deg) translateZ(380px);
+        }
+
+        .ring>.three {
+            -webkit-transform: rotateY(60deg) translateZ(380px);
+        }
+
+        .ring>.four {
+            -webkit-transform: rotateY(90deg) translateZ(380px);
+        }
+
+        .ring>.five {
+            -webkit-transform: rotateY(120deg) translateZ(380px);
+        }
+
+        .ring>.six {
+            -webkit-transform: rotateY(150deg) translateZ(380px);
+        }
+
+        .ring>.seven {
+            -webkit-transform: rotateY(180deg) translateZ(380px);
+        }
+
+        .ring>.eight {
+            -webkit-transform: rotateY(210deg) translateZ(380px);
+        }
+
+        .ring>.nine {
+            -webkit-transform: rotateY(-120deg) translateZ(380px);
+        }
+
+        .ring>.ten {
+            -webkit-transform: rotateY(-90deg) translateZ(380px);
+        }
+
+        .ring>.eleven {
+            -webkit-transform: rotateY(300deg) translateZ(380px);
+        }
+
+        .ring>.twelve {
+            -webkit-transform: rotateY(330deg) translateZ(380px);
+        }
+
+        .controls {
+            width: 80%;
+            margin: 0 auto;
+            padding: 5px 20px;
+            -webkit-border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .controls>div {
+            margin: 10px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            position: relative;
+            display: inline-flex;
+        }
+
+        li {
+            list-style: none;
+            font-size: 146px;
+        }
+
+        label {
+            position: relative;
+        }
+
+        input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 80px;
+            width: 80px;
+            z-index: 100;
+        }
+
+        li.div {
+            position: relative;
+            height: 80px;
+            width: 80px;
+            background: #18191f;
+            color: #555;
+            display: flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 146px;
+            cursor: pointer;
+            margin: 0 4px;
+            border-radius: 20px;
+            box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+                4px 4px 6px rgba(0, 0, 0, 0.2),
+                inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+                inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* div:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 75px;
+  height: 38px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+} */
+
+        #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        }
+
+        input[type="checkbox"]:checked~div {
+            box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+                inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+            color: yellow;
+            text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+            animation: glow 1.5s linear infinite;
+        }
+
+        iframe {
+            position: fixed;
+            bottom: 0;
+            right: 18px;
+        }
+
+        @keyframes glow {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+    </style>
+    <script type="text/javascript" id="www-widgetapi-script" src="./test_files/www-widgetapi.js" async=""></script><script src="./test_files/iframe_api"></script><script type="text/javascript" charset="utf-8">
+        function hasClassName(inElement, inClassName) {
+            var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)');
+            return regExp.test(inElement.className);
+        }
+
+        function addClassName(inElement, inClassName) {
+            if (!hasClassName(inElement, inClassName))
+                inElement.className = [inElement.className, inClassName].join(' ');
+        }
+
+        function removeClassName(inElement, inClassName) {
+            if (hasClassName(inElement, inClassName)) {
+                var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)', 'g');
+                var curClasses = inElement.className;
+                inElement.className = curClasses.replace(regExp, ' ');
+            }
+        }
+
+        function toggleClassName(inElement, inClassName) {
+            if (hasClassName(inElement, inClassName))
+                removeClassName(inElement, inClassName);
+            else
+                addClassName(inElement, inClassName);
+        }
+
+        function toggleShape() {
+            var shape = document.getElementById('shape');
+            if (hasClassName(shape, 'ring')) {
+                removeClassName(shape, 'ring');
+                addClassName(shape, 'cube');
+            } else {
+                removeClassName(shape, 'cube');
+                addClassName(shape, 'ring');
+            }
+
+            // Move the ring back in Z so it's not so in-your-face.
+            var stage = document.getElementById('stage');
+            if (hasClassName(shape, 'ring'))
+                stage.style.webkitTransform = 'translateZ(-200px)';
+            else
+                stage.style.webkitTransform = '';
+        }
+
+        function toggleBackfaces() {
+            var backfacesVisible = document.getElementById('backfaces').checked;
+            var shape = document.getElementById('shape');
+            if (backfacesVisible)
+                addClassName(shape, 'backfaces');
+            else
+                removeClassName(shape, 'backfaces');
+        }
+
+        var tag = document.createElement('script');
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player;
+        function onYouTubeIframeAPIReady() { //https://www.youtube.com/embed/hN0kfrX0Y4o?autoplay=1&controls=0&showinfo=0
+            player = new YT.Player('player', {
+                height: '290',
+                width: '250',
+                videoId: 'GX5FpXDtTCs?autoplay=1&muted=1',
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        // 4. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+
+        // 5. The API calls this function when the player's state changes.
+        //    The function indicates that when playing a video (state=1),
+        //    the player should play for six seconds and then stop.
+        var done = false;
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                //   setTimeout(stopVideo, 6000);
+                done = true;
+            }
+        }
+        function stopVideo() {
+            player.stopVideo();
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="https://www.youtube.com/embed/GX5FpXDtTCs?autoplay=1&&mute=1" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video> -->
+      <img id="myVideo" src="./test_files/giphy-downsized-large.gif" alt="this slowpoke moves">
+      <!-- <iframe id="myVideo" width="420" height="345" src="https://www.youtube.com/embed/GX5FpXDtTCs?autoplay=1&&mute=1" allow="autoplay"></iframe> -->
+      <!-- <div id="player"></div> -->
+    <div class="hero">
+
+        <div class="snow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
+                <g fill="#FFF" fill-opacity=".15" transform="translate(55 42)">
+                    <g id="snow-bottom-layer">
+                        <ellipse cx="6" cy="1009.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="138" cy="1110.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="398" cy="1055.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="719" cy="1284.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="760" cy="1155.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="635" cy="1459.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="478" cy="1335.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="322" cy="1414.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="247" cy="1234.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="154" cy="1425.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="731" cy="773.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="599" cy="874.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="339" cy="819.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="239" cy="1004.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="113" cy="863.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="102" cy="1223.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="395" cy="1155.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="826" cy="943.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="626" cy="1054.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="887" cy="1366.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="6" cy="241.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="138" cy="342.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="398" cy="287.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="719" cy="516.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="760" cy="387.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="635" cy="691.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="478" cy="567.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="322" cy="646.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="247" cy="466.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="154" cy="657.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="731" cy="5.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="599" cy="106.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="339" cy="51.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="239" cy="236.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="113" cy="95.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="102" cy="455.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="395" cy="387.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="826" cy="175.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="626" cy="286.5" rx="6" ry="5.5"></ellipse>
+                        <ellipse cx="887" cy="598.5" rx="6" ry="5.5"></ellipse>
+                    </g>
+                </g>
+                <g fill="#FFF" fill-opacity=".3" transform="translate(65 63)">
+                    <g id="snow-top-layer">
+                        <circle cx="8" cy="776" r="8"></circle>
+                        <circle cx="189" cy="925" r="8"></circle>
+                        <circle cx="548" cy="844" r="8"></circle>
+                        <circle cx="685" cy="1115" r="8"></circle>
+                        <circle cx="858" cy="909" r="8"></circle>
+                        <circle cx="874" cy="1438" r="8" transform="rotate(180 874 1438)"></circle>
+                        <circle cx="657" cy="1256" r="8" transform="rotate(180 657 1256)"></circle>
+                        <circle cx="443" cy="1372" r="8" transform="rotate(180 443 1372)"></circle>
+                        <circle cx="339" cy="1107" r="8" transform="rotate(180 339 1107)"></circle>
+                        <circle cx="24" cy="1305" r="8" transform="rotate(180 24 1305)"></circle>
+                        <circle cx="8" cy="8" r="8"></circle>
+                        <circle cx="189" cy="157" r="8"></circle>
+                        <circle cx="548" cy="76" r="8"></circle>
+                        <circle cx="685" cy="347" r="8"></circle>
+                        <circle cx="858" cy="141" r="8"></circle>
+                        <circle cx="874" cy="670" r="8" transform="rotate(180 874 670)"></circle>
+                        <circle cx="657" cy="488" r="8" transform="rotate(180 657 488)"></circle>
+                        <circle cx="443" cy="604" r="8" transform="rotate(180 443 604)"></circle>
+                        <circle cx="339" cy="339" r="8" transform="rotate(180 339 339)"></circle>
+                        <circle cx="24" cy="537" r="8" transform="rotate(180 24 537)"></circle>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <div class="hero__content">
+
+            <div>
+                <ul class="flex-container">
+                    <li>
+                        <input type="checkbox" checked="">
+                        <div>20</div>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked="">
+                        <div>-</div>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked="">
+                        <div>10</div>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked="">
+                        <div>-</div>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked="">
+                        <div>2021</div>
+                    </li>
+                    <li>
+                        <img alt="personal-logo" class="img-responsive" src="./test_files/heart.png">
+                    </li>
+                </ul>
+            </div>
+            <div class="controls">
+                <div>Nhân ngày 20-10,</div>
+                <div>Con chúc mẹ ngày càng xinh đẹp, sức khỏe dồi dào.</div>
+                <div>Chúc vợ ngày càng tươi tắn, ngập tràn hạnh phúc.</div>
+                <div>Chúc các bạn nữ 20/10 vui vẻ.</div>
+                <div></div>
+                <div>Nhấn nút play cho bản nhạc bên dưới nếu không auto play</div>
+                <div>
+                    <audio src="lo-fi-and-chill.mp3" controls="" loop="true" autostart="true" allow="autoplay" autoplay="">
+                        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+                    </audio>
+                </div>
+            </div>
+            <div id="container">
+                <div id="stage">
+                    <div id="shape" class="cube backfaces">
+                        <div class="plane one"></div>
+                        <div class="plane two"></div>
+                        <div class="plane three"></div>
+                        <div class="plane four"></div>
+                        <div class="plane five"></div>
+                        <div class="plane six"></div>
+                        <div class="plane seven"></div>
+                        <div class="plane eight"></div>
+                        <div class="plane nine"></div>
+                        <div class="plane ten"></div>
+                        <div class="plane eleven"></div>
+                        <div class="plane twelve"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/hN0kfrX0Y4o?autoplay=1&controls=0&showinfo=0" allow="autoplay"></iframe> -->
+        <!-- <div id="player"></div> -->
+    </div>
+
+
+
+</body></html>
